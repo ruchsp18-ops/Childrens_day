@@ -376,6 +376,238 @@
             font-family: 'Fredoka One', cursive;
         }
 
+        /* New sections */
+        .gift-section {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 25px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 230, 255, 0.9));
+        }
+
+        .gift-section h2 {
+            color: #6BCBFF;
+            margin-bottom: 25px;
+            font-size: 2.8rem;
+            font-family: 'Fredoka One', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gift-box {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+
+        .gift-box:hover {
+            transform: scale(1.1);
+        }
+
+        .gift-box-top {
+            width: 150px;
+            height: 40px;
+            background: linear-gradient(45deg, #FF4081, #FF80AB);
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 0.5s ease;
+            transform-origin: bottom;
+            z-index: 2;
+        }
+
+        .gift-box-body {
+            width: 150px;
+            height: 110px;
+            background: linear-gradient(45deg, #FF80AB, #FF4081);
+            border-radius: 5px;
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+
+        .gift-box-ribbon {
+            width: 30px;
+            height: 150px;
+            background: linear-gradient(45deg, #FFD93D, #FFEB3B);
+            position: absolute;
+            top: 0;
+            left: 60px;
+            z-index: 3;
+        }
+
+        .gift-box-bow {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #FFD93D, #FFEB3B);
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            left: 45px;
+            z-index: 4;
+        }
+
+        .gift-box.opened .gift-box-top {
+            transform: rotateX(90deg);
+        }
+
+        .gift-message {
+            display: none;
+            font-size: 1.5rem;
+            color: #FF4081;
+            font-family: 'Fredoka One', cursive;
+            margin-top: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fun-facts {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 25px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(230, 255, 230, 0.9));
+        }
+
+        .fun-facts h2 {
+            color: #6BCBFF;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2.8rem;
+            font-family: 'Fredoka One', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .fact-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .fact-item {
+            background: linear-gradient(45deg, #ffffff, #e6ffe6);
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .fact-item:hover {
+            background: linear-gradient(45deg, #6BCF7F, #a1e6a1);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(107, 207, 127, 0.4);
+        }
+
+        .fact-item h3 {
+            color: #FF4081;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .fact-item:hover h3 {
+            color: white;
+        }
+
+        .fact-item p {
+            color: #444;
+            font-size: 1rem;
+        }
+
+        .fact-item:hover p {
+            color: white;
+        }
+
+        .coloring-section {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 25px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 230, 0.9));
+        }
+
+        .coloring-section h2 {
+            color: #6BCBFF;
+            margin-bottom: 25px;
+            font-size: 2.8rem;
+            font-family: 'Fredoka One', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .coloring-canvas {
+            border: 3px solid #FF4081;
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            display: block;
+            background-color: white;
+            cursor: crosshair;
+        }
+
+        .coloring-controls {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .color-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .color-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .color-btn.active {
+            border-color: #333;
+            transform: scale(1.2);
+        }
+
+        .clear-btn {
+            background: linear-gradient(45deg, #FF4081, #FF80AB);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            margin: 10px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .clear-btn:hover {
+            background: linear-gradient(45deg, #F50057, #FF4081);
+            transform: scale(1.05);
+        }
+
         /* Floating elements */
         .floating {
             position: absolute;
@@ -397,6 +629,12 @@
         .balloon {
             font-size: 2.5rem;
             animation: float-up 15s linear infinite;
+        }
+
+        .star {
+            color: rgba(255, 215, 0, 0.8);
+            font-size: 2.5rem;
+            animation: float-up 14s linear infinite;
         }
 
         @keyframes float-up {
@@ -477,8 +715,13 @@
                 font-size: 1.1rem;
             }
             
-            .activities h2, .wishes-section h2 {
+            .activities h2, .wishes-section h2, .gift-section h2, .fun-facts h2, .coloring-section h2 {
                 font-size: 2.2rem;
+            }
+            
+            .coloring-canvas {
+                width: 100%;
+                max-width: 300px;
             }
         }
     </style>
@@ -579,6 +822,57 @@
             </div>
         </div>
 
+        <div class="gift-section">
+            <h2 class="rainbow-text">Special Gift for You</h2>
+            <div class="gift-box" id="giftBox">
+                <div class="gift-box-top"></div>
+                <div class="gift-box-body"></div>
+                <div class="gift-box-ribbon"></div>
+                <div class="gift-box-bow"></div>
+            </div>
+            <div class="gift-message" id="giftMessage">
+                🎉 You are amazing just the way you are! Never stop shining! 🌟
+            </div>
+            <p>Click on the gift box to open your surprise!</p>
+        </div>
+
+        <div class="fun-facts">
+            <h2 class="rainbow-text">Fun Facts About Children's Day</h2>
+            <div class="fact-list">
+                <div class="fact-item">
+                    <h3>Universal Children's Day</h3>
+                    <p>The United Nations established Universal Children's Day in 1954 to promote international togetherness and awareness among children worldwide.</p>
+                </div>
+                <div class="fact-item">
+                    <h3>Different Dates</h3>
+                    <p>Different countries celebrate Children's Day on different dates. In India, it's celebrated on November 14th, which is Jawaharlal Nehru's birthday.</p>
+                </div>
+                <div class="fact-item">
+                    <h3>Nehru's Love for Children</h3>
+                    <p>Jawaharlal Nehru, the first Prime Minister of India, loved children and roses. He often said that children were like rosebuds in a garden.</p>
+                </div>
+                <div class="fact-item">
+                    <h3>Chacha Nehru</h3>
+                    <p>Children fondly called Jawaharlal Nehru 'Chacha Nehru' (Uncle Nehru) because of his affection for them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="coloring-section">
+            <h2 class="rainbow-text">Coloring Corner</h2>
+            <p>Draw something beautiful and colorful!</p>
+            <canvas id="coloringCanvas" class="coloring-canvas" width="400" height="300"></canvas>
+            <div class="coloring-controls">
+                <div class="color-btn active" style="background-color: #FF4081;" data-color="#FF4081;"></div>
+                <div class="color-btn" style="background-color: #6BCBFF;" data-color="#6BCBFF;"></div>
+                <div class="color-btn" style="background-color: #6BCF7F;" data-color="#6BCF7F;"></div>
+                <div class="color-btn" style="background-color: #FFD93D;" data-color="#FFD93D;"></div>
+                <div class="color-btn" style="background-color: #B388FF;" data-color="#B388FF;"></div>
+                <div class="color-btn" style="background-color: #000000;" data-color="#000000;"></div>
+            </div>
+            <button class="clear-btn" id="clearCanvas">Clear Canvas</button>
+        </div>
+
         <div class="wishes-section">
             <h2 class="rainbow-text">Special Wishes for You</h2>
             <button class="wish-button" onclick="showWish()">Click for a Special Wish!</button>
@@ -591,7 +885,7 @@
     </div>
 
     <script>
-        // Create floating hearts, candies, and balloons
+        // Create floating hearts, candies, balloons, and stars
         function createFloatingElement(type) {
             const element = document.createElement('div');
             element.classList.add('floating');
@@ -603,6 +897,9 @@
                 element.classList.add('balloon');
                 const balloons = ['🎈', '🎈', '🎈', '🎉', '🎊'];
                 element.textContent = balloons[Math.floor(Math.random() * balloons.length)];
+            } else if (type === 'star') {
+                element.classList.add('star');
+                element.innerHTML = '<i class="fas fa-star"></i>';
             } else {
                 element.classList.add('candy');
                 const candies = ['🍭', '🍬', '🧁', '🍩', '🍪', '🧁', '🍫'];
@@ -633,6 +930,7 @@
             createFloatingElement('heart');
             createFloatingElement('candy');
             createFloatingElement('balloon');
+            createFloatingElement('star');
         }, 1500);
 
         // Create confetti
@@ -712,12 +1010,126 @@
             }, 10);
         }
 
+        // Gift box functionality
+        const giftBox = document.getElementById('giftBox');
+        const giftMessage = document.getElementById('giftMessage');
+        let giftOpened = false;
+
+        giftBox.addEventListener('click', function() {
+            if (!giftOpened) {
+                giftBox.classList.add('opened');
+                giftMessage.style.display = 'block';
+                giftOpened = true;
+                
+                // Create extra confetti for celebration
+                for (let i = 0; i < 30; i++) {
+                    setTimeout(createConfetti, i * 50);
+                }
+            }
+        });
+
+        // Coloring canvas functionality
+        const canvas = document.getElementById('coloringCanvas');
+        const ctx = canvas.getContext('2d');
+        const colorBtns = document.querySelectorAll('.color-btn');
+        const clearBtn = document.getElementById('clearCanvas');
+        
+        let isDrawing = false;
+        let currentColor = '#FF4081';
+        
+        // Set canvas size for mobile
+        if (window.innerWidth < 768) {
+            canvas.width = 300;
+            canvas.height = 225;
+        }
+        
+        // Color selection
+        colorBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                colorBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                // Set current color
+                currentColor = this.getAttribute('data-color');
+            });
+        });
+        
+        // Drawing functionality
+        function startDrawing(e) {
+            isDrawing = true;
+            draw(e);
+        }
+        
+        function draw(e) {
+            if (!isDrawing) return;
+            
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = currentColor;
+            
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+        }
+        
+        function stopDrawing() {
+            if (isDrawing) {
+                isDrawing = false;
+                ctx.beginPath();
+            }
+        }
+        
+        // Mouse events
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+        
+        // Touch events for mobile
+        canvas.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const mouseEvent = new MouseEvent('mousedown', {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            canvas.dispatchEvent(mouseEvent);
+        });
+        
+        canvas.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const mouseEvent = new MouseEvent('mousemove', {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            canvas.dispatchEvent(mouseEvent);
+        });
+        
+        canvas.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            const mouseEvent = new MouseEvent('mouseup', {});
+            canvas.dispatchEvent(mouseEvent);
+        });
+        
+        // Clear canvas
+        clearBtn.addEventListener('click', function() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
         // Create some initial floating elements
         for (let i = 0; i < 8; i++) {
             setTimeout(() => {
                 createFloatingElement('heart');
                 createFloatingElement('candy');
                 createFloatingElement('balloon');
+                createFloatingElement('star');
             }, i * 300);
         }
 
