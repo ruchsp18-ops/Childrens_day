@@ -136,36 +136,17 @@
             font-size: 4.5rem;
             font-weight: bold;
             margin-bottom: 20px;
-            background: linear-gradient(45deg, #FF5E78, #ffffff, #FF5E78);
+            background: linear-gradient(45deg, #FF4081, #ffffff, #FF4081);
             background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             text-shadow: 
-                0 0 15px rgba(255, 255, 255, 0.9),
-                0 0 25px rgba(255, 94, 120, 0.7),
-                0 0 35px rgba(255, 182, 193, 0.5),
-                0 0 45px rgba(255, 105, 180, 0.3);
-            animation: cloud-effect 3s ease-in-out infinite, gradient-shift 5s ease infinite;
+                0 0 5px rgba(255, 255, 255, 0.8),
+                0 0 10px rgba(255, 64, 129, 0.5);
+            animation: gradient-shift 5s ease infinite;
             letter-spacing: 2px;
             line-height: 1.2;
-        }
-
-        @keyframes cloud-effect {
-            0%, 100% { 
-                text-shadow: 
-                    0 0 15px rgba(255, 255, 255, 0.9),
-                    0 0 25px rgba(255, 94, 120, 0.7),
-                    0 0 35px rgba(255, 182, 193, 0.5),
-                    0 0 45px rgba(255, 105, 180, 0.3);
-            }
-            50% { 
-                text-shadow: 
-                    0 0 20px rgba(255, 255, 255, 1),
-                    0 0 30px rgba(255, 94, 120, 0.8),
-                    0 0 40px rgba(255, 182, 193, 0.6),
-                    0 0 50px rgba(255, 105, 180, 0.4);
-            }
         }
 
         @keyframes gradient-shift {
@@ -218,7 +199,7 @@
         .signature {
             text-align: right;
             font-size: 1.8rem;
-            color: #FF5E78;
+            color: #FF4081;
             font-weight: bold;
             margin-top: 25px;
             font-family: 'Fredoka One', cursive;
@@ -264,7 +245,7 @@
         }
 
         .gallery-item h3 {
-            color: #FF5E78;
+            color: #FF4081;
             margin-bottom: 12px;
             font-size: 1.5rem;
             font-family: 'Fredoka One', cursive;
@@ -320,7 +301,7 @@
         .activity-item i {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #FF5E78;
+            color: #FF4081;
             transition: all 0.3s ease;
         }
 
@@ -361,7 +342,7 @@
         }
 
         .wish-button {
-            background: linear-gradient(45deg, #FF5E78, #FF9A9E);
+            background: linear-gradient(45deg, #FF4081, #FF80AB);
             color: white;
             border: none;
             border-radius: 50px;
@@ -371,14 +352,14 @@
             transition: all 0.4s ease;
             margin: 10px;
             font-weight: bold;
-            box-shadow: 0 5px 15px rgba(255, 94, 120, 0.4);
+            box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
             font-family: 'Fredoka One', cursive;
         }
 
         .wish-button:hover {
-            background: linear-gradient(45deg, #FF5252, #FF6B6B);
+            background: linear-gradient(45deg, #F50057, #FF4081);
             transform: scale(1.08);
-            box-shadow: 0 8px 20px rgba(255, 94, 120, 0.5);
+            box-shadow: 0 8px 20px rgba(255, 64, 129, 0.5);
         }
 
         .wish-display {
@@ -403,7 +384,7 @@
         }
 
         .heart {
-            color: rgba(255, 94, 120, 0.8);
+            color: rgba(255, 64, 129, 0.8);
             font-size: 2.5rem;
             animation: float-up 12s linear infinite;
         }
@@ -470,7 +451,7 @@
 
         /* Rainbow text effect for special elements */
         .rainbow-text {
-            background: linear-gradient(45deg, #FF5E78, #FFD93D, #6BCF7F, #6BCBFF, #B388FF, #FF5E78);
+            background: linear-gradient(45deg, #FF4081, #FFD93D, #6BCF7F, #6BCBFF, #B388FF, #FF4081);
             background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
@@ -660,7 +641,7 @@
             confetti.classList.add('confetti');
             
             // Random color
-            const colors = ['#FF5E78', '#6BCBFF', '#6BCF7F', '#FFD93D', '#B388FF'];
+            const colors = ['#FF4081', '#6BCBFF', '#6BCF7F', '#FFD93D', '#B388FF'];
             confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             
             // Random shape
