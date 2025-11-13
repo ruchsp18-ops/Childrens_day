@@ -1504,7 +1504,8 @@
             e.preventDefault();
             const touch = e.touches[0];
             const mouseEvent = new MouseEvent('mousemove', {
-                clientX: touch.clientY: touch.clientY
+                clientX: touch.clientX,
+                clientY: touch.clientY
             });
             canvas.dispatchEvent(mouseEvent);
         });
