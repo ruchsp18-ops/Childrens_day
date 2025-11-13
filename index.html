@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Children's Day from Rucheeta Mam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fbc2eb 100%);
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 25%, #fbc2eb 50%, #ff9a9e 75%, #fad0c4 100%);
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
@@ -24,7 +24,7 @@
         /* Cloudy background elements */
         .cloud {
             position: absolute;
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 50%;
             z-index: 1;
             pointer-events: none;
@@ -34,74 +34,74 @@
         .cloud::after {
             content: '';
             position: absolute;
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 50%;
         }
 
         .cloud1 {
-            width: 150px;
-            height: 60px;
+            width: 180px;
+            height: 70px;
             top: 10%;
             left: 10%;
             animation: float 20s infinite ease-in-out;
         }
 
         .cloud1::before {
-            width: 80px;
-            height: 80px;
-            top: -40px;
-            left: 20px;
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            left: 25px;
         }
 
         .cloud1::after {
-            width: 100px;
-            height: 70px;
-            top: -30px;
-            right: 20px;
+            width: 120px;
+            height: 90px;
+            top: -40px;
+            right: 25px;
         }
 
         .cloud2 {
-            width: 120px;
-            height: 50px;
+            width: 150px;
+            height: 60px;
             top: 20%;
             right: 15%;
             animation: float 25s infinite ease-in-out reverse;
         }
 
         .cloud2::before {
-            width: 70px;
-            height: 70px;
-            top: -35px;
-            left: 15px;
+            width: 90px;
+            height: 90px;
+            top: -45px;
+            left: 20px;
         }
 
         .cloud2::after {
-            width: 80px;
-            height: 60px;
-            top: -25px;
-            right: 15px;
+            width: 100px;
+            height: 80px;
+            top: -35px;
+            right: 20px;
         }
 
         .cloud3 {
-            width: 180px;
-            height: 70px;
+            width: 200px;
+            height: 80px;
             bottom: 30%;
             left: 20%;
             animation: float 30s infinite ease-in-out;
         }
 
         .cloud3::before {
-            width: 90px;
-            height: 90px;
-            top: -45px;
-            left: 30px;
+            width: 110px;
+            height: 110px;
+            top: -55px;
+            left: 35px;
         }
 
         .cloud3::after {
-            width: 110px;
-            height: 80px;
-            top: -35px;
-            right: 30px;
+            width: 130px;
+            height: 100px;
+            top: -45px;
+            right: 35px;
         }
 
         @keyframes float {
@@ -122,29 +122,30 @@
         header {
             text-align: center;
             padding: 40px 0;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 30px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 230, 240, 0.9));
         }
 
         .main-title {
-            font-family: 'Bubblegum Sans', cursive;
-            font-size: 4rem;
+            font-family: 'Fredoka One', cursive;
+            font-size: 4.5rem;
             font-weight: bold;
             margin-bottom: 20px;
-            background: linear-gradient(45deg, #ff6b6b, #ffffff, #ff6b6b);
+            background: linear-gradient(45deg, #FF5E78, #ffffff, #FF5E78);
             background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             text-shadow: 
-                0 0 10px rgba(255, 255, 255, 0.8),
-                0 0 20px rgba(255, 182, 193, 0.6),
-                0 0 30px rgba(255, 105, 180, 0.4),
-                0 0 40px rgba(255, 20, 147, 0.2);
+                0 0 15px rgba(255, 255, 255, 0.9),
+                0 0 25px rgba(255, 94, 120, 0.7),
+                0 0 35px rgba(255, 182, 193, 0.5),
+                0 0 45px rgba(255, 105, 180, 0.3);
             animation: cloud-effect 3s ease-in-out infinite, gradient-shift 5s ease infinite;
             letter-spacing: 2px;
             line-height: 1.2;
@@ -153,17 +154,17 @@
         @keyframes cloud-effect {
             0%, 100% { 
                 text-shadow: 
-                    0 0 10px rgba(255, 255, 255, 0.8),
-                    0 0 20px rgba(255, 182, 193, 0.6),
-                    0 0 30px rgba(255, 105, 180, 0.4),
-                    0 0 40px rgba(255, 20, 147, 0.2);
+                    0 0 15px rgba(255, 255, 255, 0.9),
+                    0 0 25px rgba(255, 94, 120, 0.7),
+                    0 0 35px rgba(255, 182, 193, 0.5),
+                    0 0 45px rgba(255, 105, 180, 0.3);
             }
             50% { 
                 text-shadow: 
-                    0 0 15px rgba(255, 255, 255, 0.9),
-                    0 0 25px rgba(255, 182, 193, 0.7),
-                    0 0 35px rgba(255, 105, 180, 0.5),
-                    0 0 45px rgba(255, 20, 147, 0.3);
+                    0 0 20px rgba(255, 255, 255, 1),
+                    0 0 30px rgba(255, 94, 120, 0.8),
+                    0 0 40px rgba(255, 182, 193, 0.6),
+                    0 0 50px rgba(255, 105, 180, 0.4);
             }
         }
 
@@ -174,15 +175,16 @@
         }
 
         .subtitle {
-            font-size: 2rem;
-            color: #4d96ff;
+            font-size: 2.2rem;
+            color: #6BCBFF;
             margin-bottom: 20px;
             font-weight: bold;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Fredoka One', cursive;
         }
 
         .message-container {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.85);
             border-radius: 25px;
             padding: 40px;
             margin-bottom: 40px;
@@ -190,7 +192,8 @@
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(5px);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(230, 255, 250, 0.9));
         }
 
         .message-container::before {
@@ -199,14 +202,14 @@
             top: -30px;
             left: 10px;
             font-size: 12rem;
-            color: rgba(255, 107, 107, 0.1);
+            color: rgba(255, 94, 120, 0.15);
             font-family: serif;
         }
 
         .message {
             font-size: 1.3rem;
             line-height: 1.9;
-            color: #333;
+            color: #444;
             margin-bottom: 25px;
             position: relative;
             z-index: 1;
@@ -214,11 +217,11 @@
 
         .signature {
             text-align: right;
-            font-size: 1.7rem;
-            color: #ff6b6b;
+            font-size: 1.8rem;
+            color: #FF5E78;
             font-weight: bold;
             margin-top: 25px;
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Fredoka One', cursive;
         }
 
         .gallery {
@@ -235,12 +238,12 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             transition: all 0.4s ease;
             transform: translateY(0);
-            border: 3px solid rgba(255, 255, 255, 0.7);
+            border: 3px solid rgba(255, 255, 255, 0.8);
         }
 
         .gallery-item:hover {
             transform: translateY(-15px) scale(1.03);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 35px rgba(107, 203, 255, 0.3);
         }
 
         .gallery-item img {
@@ -257,13 +260,14 @@
         .gallery-item-content {
             padding: 20px;
             text-align: center;
+            background: linear-gradient(45deg, #ffffff, #f0f9ff);
         }
 
         .gallery-item h3 {
-            color: #ff6b6b;
+            color: #FF5E78;
             margin-bottom: 12px;
             font-size: 1.5rem;
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Fredoka One', cursive;
         }
 
         .gallery-item p {
@@ -272,21 +276,22 @@
         }
 
         .activities {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.85);
             border-radius: 25px;
             padding: 35px;
             margin-bottom: 40px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 245, 230, 0.9));
         }
 
         .activities h2 {
-            color: #4d96ff;
+            color: #6BCBFF;
             margin-bottom: 25px;
             text-align: center;
             font-size: 2.8rem;
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Fredoka One', cursive;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
@@ -297,25 +302,25 @@
         }
 
         .activity-item {
-            background-color: #ffecf2;
+            background: linear-gradient(45deg, #ffffff, #e6f7ff);
             border-radius: 15px;
             padding: 20px;
             text-align: center;
             transition: all 0.4s ease;
-            border: 2px solid rgba(255, 255, 255, 0.7);
+            border: 2px solid rgba(255, 255, 255, 0.8);
         }
 
         .activity-item:hover {
-            background-color: #ff6b6b;
+            background: linear-gradient(45deg, #6BCBFF, #a1c4fd);
             color: white;
             transform: scale(1.08);
-            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 10px 20px rgba(107, 203, 255, 0.4);
         }
 
         .activity-item i {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #ff6b6b;
+            color: #FF5E78;
             transition: all 0.3s ease;
         }
 
@@ -327,30 +332,36 @@
         .activity-item h3 {
             margin-bottom: 10px;
             font-size: 1.3rem;
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Fredoka One', cursive;
+            color: #444;
+        }
+
+        .activity-item:hover h3 {
+            color: white;
         }
 
         .wishes-section {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.85);
             border-radius: 25px;
             padding: 35px;
             margin-bottom: 40px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             text-align: center;
             backdrop-filter: blur(5px);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 240, 245, 0.9));
         }
 
         .wishes-section h2 {
-            color: #4d96ff;
+            color: #6BCBFF;
             margin-bottom: 25px;
             font-size: 2.8rem;
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Fredoka One', cursive;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .wish-button {
-            background: linear-gradient(45deg, #ff6b6b, #ff9a9e);
+            background: linear-gradient(45deg, #FF5E78, #FF9A9E);
             color: white;
             border: none;
             border-radius: 50px;
@@ -360,28 +371,28 @@
             transition: all 0.4s ease;
             margin: 10px;
             font-weight: bold;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
-            font-family: 'Bubblegum Sans', cursive;
+            box-shadow: 0 5px 15px rgba(255, 94, 120, 0.4);
+            font-family: 'Fredoka One', cursive;
         }
 
         .wish-button:hover {
-            background: linear-gradient(45deg, #ff5252, #ff6b6b);
+            background: linear-gradient(45deg, #FF5252, #FF6B6B);
             transform: scale(1.08);
-            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 8px 20px rgba(255, 94, 120, 0.5);
         }
 
         .wish-display {
             margin-top: 25px;
             font-size: 1.7rem;
-            color: #333;
+            color: #444;
             min-height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 15px;
             border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.5);
-            font-family: 'Bubblegum Sans', cursive;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.7), rgba(230, 255, 250, 0.7));
+            font-family: 'Fredoka One', cursive;
         }
 
         /* Floating elements */
@@ -392,7 +403,7 @@
         }
 
         .heart {
-            color: rgba(255, 107, 107, 0.7);
+            color: rgba(255, 94, 120, 0.8);
             font-size: 2.5rem;
             animation: float-up 12s linear infinite;
         }
@@ -421,18 +432,19 @@
         footer {
             text-align: center;
             padding: 25px;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.85);
             border-radius: 25px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(240, 255, 240, 0.9));
         }
 
         footer p {
-            color: #333;
+            color: #444;
             font-size: 1.4rem;
             font-weight: bold;
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Fredoka One', cursive;
         }
 
         /* Confetti effect */
@@ -440,7 +452,6 @@
             position: absolute;
             width: 10px;
             height: 10px;
-            background-color: #ff6b6b;
             position: absolute;
             animation: confetti-fall 5s linear infinite;
             z-index: 1;
@@ -457,13 +468,28 @@
             }
         }
 
+        /* Rainbow text effect for special elements */
+        .rainbow-text {
+            background: linear-gradient(45deg, #FF5E78, #FFD93D, #6BCF7F, #6BCBFF, #B388FF, #FF5E78);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 3s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
         @media (max-width: 768px) {
             .main-title {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
             
             .subtitle {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
             }
             
             .message {
@@ -509,35 +535,35 @@
             <div class="gallery-item">
                 <img src="https://picsum.photos/seed/children1/400/300.jpg" alt="Children Learning">
                 <div class="gallery-item-content">
-                    <h3>Learning Together</h3>
+                    <h3 class="rainbow-text">Learning Together</h3>
                     <p>Every day is a new adventure in our classroom</p>
                 </div>
             </div>
             <div class="gallery-item">
                 <img src="https://picsum.photos/seed/children2/400/300.jpg" alt="Children Playing">
                 <div class="gallery-item-content">
-                    <h3>Playing & Growing</h3>
+                    <h3 class="rainbow-text">Playing & Growing</h3>
                     <p>Through play, we discover and develop new skills</p>
                 </div>
             </div>
             <div class="gallery-item">
                 <img src="https://picsum.photos/seed/children3/400/300.jpg" alt="Children Creating">
                 <div class="gallery-item-content">
-                    <h3>Creating Magic</h3>
+                    <h3 class="rainbow-text">Creating Magic</h3>
                     <p>Your creativity knows no bounds</p>
                 </div>
             </div>
             <div class="gallery-item">
                 <img src="https://picsum.photos/seed/children4/400/300.jpg" alt="Children Celebrating">
                 <div class="gallery-item-content">
-                    <h3>Celebrating Success</h3>
+                    <h3 class="rainbow-text">Celebrating Success</h3>
                     <p>Every achievement, big or small, is worth celebrating</p>
                 </div>
             </div>
         </div>
 
         <div class="activities">
-            <h2>Fun Activities for Children's Day</h2>
+            <h2 class="rainbow-text">Fun Activities for Children's Day</h2>
             <div class="activity-list">
                 <div class="activity-item">
                     <i class="fas fa-paint-brush"></i>
@@ -573,13 +599,13 @@
         </div>
 
         <div class="wishes-section">
-            <h2>Special Wishes for You</h2>
+            <h2 class="rainbow-text">Special Wishes for You</h2>
             <button class="wish-button" onclick="showWish()">Click for a Special Wish!</button>
             <div class="wish-display" id="wishDisplay"></div>
         </div>
 
         <footer>
-            <p>Wishing all my wonderful students a very Happy Children's Day! You make every day special!</p>
+            <p class="rainbow-text">Wishing all my wonderful students a very Happy Children's Day! You make every day special!</p>
         </footer>
     </div>
 
@@ -634,7 +660,7 @@
             confetti.classList.add('confetti');
             
             // Random color
-            const colors = ['#ff6b6b', '#4d96ff', '#6bcf7f', '#ff9a9e', '#fad0c4'];
+            const colors = ['#FF5E78', '#6BCBFF', '#6BCF7F', '#FFD93D', '#B388FF'];
             confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             
             // Random shape
